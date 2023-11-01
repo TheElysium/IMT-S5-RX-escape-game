@@ -229,8 +229,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17669426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.421, z: 1.448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000000007450581, y: 0.421, z: 1.448}
   m_LocalScale: {x: 1, y: 0.38956, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 231036905}
   - component: {fileID: 231036904}
   - component: {fileID: 231036906}
+  - component: {fileID: 231036907}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -513,6 +514,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &231036907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231036901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395a6065734945f43a387c66954c6997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverOutlineMaterial: {fileID: 2100000, guid: e1d2a950a6b02c1498b81ec1c5e777ce, type: 2}
+  selectOutlineMaterial: {fileID: 2100000, guid: 1d212bd2141d53242bfcab19ce4a5694, type: 2}
 --- !u!1 &249355308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,13 +3489,13 @@ MonoBehaviour:
   _whenHover:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 231036904}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
+      - m_Target: {fileID: 231036907}
+        m_TargetAssemblyTypeName: OutlineManager, Assembly-CSharp
+        m_MethodName: OnHover
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 12c81318d76a8af41a15a2e6987f93b7, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3489,13 +3504,13 @@ MonoBehaviour:
   _whenUnhover:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 231036904}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
+      - m_Target: {fileID: 231036907}
+        m_TargetAssemblyTypeName: OutlineManager, Assembly-CSharp
+        m_MethodName: OnUnhover
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4b343f8ef75166748a3a71203813fe2a, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3504,13 +3519,13 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 231036904}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
+      - m_Target: {fileID: 231036907}
+        m_TargetAssemblyTypeName: OutlineManager, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 587176147ecec5641ab65ce4a729078f, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3519,13 +3534,13 @@ MonoBehaviour:
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 231036904}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
+      - m_Target: {fileID: 231036907}
+        m_TargetAssemblyTypeName: OutlineManager, Assembly-CSharp
+        m_MethodName: OnUnselect
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4b343f8ef75166748a3a71203813fe2a, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3621,6 +3636,44 @@ Transform:
   m_Father: {fileID: 774004601}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1831093663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1297920793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831093664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831093663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!4 &1834831194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4211769496779847655, guid: ea16c3c8c1688234fa81a4f39339bf1b, type: 3}
