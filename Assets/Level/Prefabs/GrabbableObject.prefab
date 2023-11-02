@@ -363,8 +363,9 @@ GameObject:
   - component: {fileID: 3069960988548991924}
   - component: {fileID: 3069960988548991926}
   - component: {fileID: 3069960988548991927}
+  - component: {fileID: 236383886487274845}
   m_Layer: 0
-  m_Name: Object visual
+  m_Name: ObjectVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,6 +415,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 4b343f8ef75166748a3a71203813fe2a, type: 2}
+  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,5 +463,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395a6065734945f43a387c66954c6997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverOutlineMaterial: {fileID: 2100000, guid: e1d2a950a6b02c1498b81ec1c5e777ce, type: 2}
-  selectOutlineMaterial: {fileID: 2100000, guid: 1d212bd2141d53242bfcab19ce4a5694, type: 2}
+  outline: {fileID: 236383886487274845}
+--- !u!114 &236383886487274845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069960988548991929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.18396229, g: 0.39120996, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
