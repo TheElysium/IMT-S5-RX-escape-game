@@ -4,33 +4,30 @@ using UnityEngine;
 
 public class OutlineManager : MonoBehaviour
 {
-    public Material hoverOutlineMaterial;
-    public Material selectOutlineMaterial;
-
-    private MeshRenderer meshRenderer;
-    private Material objectMaterial;
+    public Outline outline;
 
     public void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
-        objectMaterial = meshRenderer.material;
+        outline.enabled = false;
     }
+
     public void OnHover()
     {
-        meshRenderer.materials = new Material[] { objectMaterial, hoverOutlineMaterial };
+        outline.enabled = true;
+        outline.OutlineColor = new Color(.55f, .63f, 1, 1);
     }
 
     public void OnUnhover()
     {
-        meshRenderer.materials = new Material[] { objectMaterial };
+        outline.enabled = false;
     }
 
     public void OnSelect()
     {
-        meshRenderer.materials = new Material[] { objectMaterial, selectOutlineMaterial };
+        outline.OutlineColor = new Color(.184f, .391f, 1, 1);
     }
     public void OnUnselect()
     {
-        meshRenderer.materials = new Material[] { objectMaterial, hoverOutlineMaterial };
+        outline.OutlineColor = new Color(.55f, .63f, 1, 1);
     }
 }
