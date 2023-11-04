@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3069960987258718908}
   - component: {fileID: 3069960987258718851}
   - component: {fileID: 3069960987258718849}
-  - component: {fileID: 3069960987258718910}
   - component: {fileID: 3069960987258718911}
+  - component: {fileID: 3069960987258718910}
   - component: {fileID: 3069960987258718904}
   m_Layer: 0
   m_Name: GrabbableObject
@@ -89,25 +89,6 @@ MonoBehaviour:
   smoothRotationDelay: 5
   smoothPositionDelay: 0.25
   grabbableRigidbody: {fileID: 3069960987258718908}
---- !u!114 &3069960987258718910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3069960987258718855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 0}
-  _maxGrabPoints: -1
 --- !u!114 &3069960987258718911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +174,25 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3069960987258718910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069960987258718855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 0}
+  _maxGrabPoints: -1
 --- !u!114 &3069960987258718904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 3069960987796938539}
   - component: {fileID: 3069960987796938538}
   - component: {fileID: 3069960987796938537}
+  - component: {fileID: 2943845731239879886}
   m_Layer: 0
   m_Name: GrabInteractable
   m_TagString: Untagged
@@ -350,6 +351,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953054d108799b942815afb3405983ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2943845731239879886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069960987796938543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ec6eccfc1a9af48889199572a6a12c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _travellingData:
+    _travelSpeed: 0.1
+    _useFixedTravelTime: 1
+    _travelCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.014556501
+        value: 0.2532899
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  _offsetFromHand: 0.15
 --- !u!1 &3069960988548991929
 GameObject:
   m_ObjectHideFlags: 0
