@@ -8,21 +8,31 @@ public class ForcePullManager : MonoBehaviour
 {
     public DistanceHandGrabInteractor distanceHandGrabInteractor;
 
-    public void PullGrabbable()
+    public void ManageMovementProvider<T>() where T : MonoBehaviour, IMovementProvider
     {
         DistanceHandGrabInteractable interactable = distanceHandGrabInteractor.SelectedInteractable;
         if (interactable == null) return;
 
-        interactable.InjectOptionalMovementProvider(interactable.gameObject.AddComponent<MoveTowardsTargetProvider>());
+        T existingProvider = interactable.gameObject.GetComponent<T>();
+        if (existingProvider == null)
+        {
+            interactable.InjectOptionalMovementProvider(interactable.gameObject.AddComponent<T>());
+        }
+        else
+        {
+            interactable.InjectOptionalMovementProvider(existingProvider);
+        }
+    }
+
+    public void PullGrabbable()
+    {
+        ManageMovementProvider<MoveTowardsTargetProvider>();
         distanceHandGrabInteractor.Unselect();
         distanceHandGrabInteractor.Select();
     }
 
-    public void resetMovementProvider()
+    public void ResetMovementProvider()
     {
-        DistanceHandGrabInteractable interactable = distanceHandGrabInteractor.SelectedInteractable;
-        if (interactable == null) return;
-
-        interactable.InjectOptionalMovementProvider(interactable.gameObject.AddComponent<MoveFromTargetProvider>());
+        ManageMovementProvider<MoveFromTargetProvider>();
     }
 }

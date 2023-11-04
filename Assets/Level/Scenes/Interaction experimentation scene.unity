@@ -583,7 +583,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 505110379}
         m_TargetAssemblyTypeName: ForcePullManager, Assembly-CSharp
-        m_MethodName: resetMovementProvider
+        m_MethodName: ResetMovementProvider
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
