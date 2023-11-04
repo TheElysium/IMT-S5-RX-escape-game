@@ -1489,6 +1489,7 @@ GameObject:
   - component: {fileID: 1224833360013730475}
   - component: {fileID: 4722215116740944012}
   - component: {fileID: 3986473895037891015}
+  - component: {fileID: 629539255}
   m_Layer: 0
   m_Name: HandFeaturesRight
   m_TagString: Untagged
@@ -1548,6 +1549,22 @@ MonoBehaviour:
     StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
   - Finger: 4
     StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  _disableProactiveEvaluation: 0
+--- !u!114 &629539255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127987781176627543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffe606b408599b4fad696ddc889a943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 4175726473201962208}
+  _hmd: {fileID: 8855014165741867738}
+  _trackingToWorldTransformer: {fileID: 5430113392427402893}
   _disableProactiveEvaluation: 0
 --- !u!1 &1143845080712350209
 GameObject:
@@ -8742,6 +8759,7 @@ GameObject:
   - component: {fileID: 1180078411977850598}
   - component: {fileID: 103727784817378403}
   - component: {fileID: 3986473895397497697}
+  - component: {fileID: 1955167645}
   m_Layer: 0
   m_Name: HandFeaturesLeft
   m_TagString: Untagged
@@ -8801,6 +8819,22 @@ MonoBehaviour:
     StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
   - Finger: 4
     StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  _disableProactiveEvaluation: 0
+--- !u!114 &1955167645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713515485759788930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffe606b408599b4fad696ddc889a943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 334784007920882265}
+  _hmd: {fileID: 8855014165741867738}
+  _trackingToWorldTransformer: {fileID: 5430113392427402893}
   _disableProactiveEvaluation: 0
 --- !u!1 &2749191184054071979
 GameObject:
