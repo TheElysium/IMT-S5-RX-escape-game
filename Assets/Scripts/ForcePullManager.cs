@@ -26,7 +26,7 @@ public class ForcePullManager : MonoBehaviour
 
     public void PullGrabbable()
     {
-        ManageMovementProvider<MoveTowardsTargetProvider>();
+        ManageMovementProvider<ForcePullMovementProvider>();
         distanceHandGrabInteractor.Unselect();
         distanceHandGrabInteractor.Select();
     }
