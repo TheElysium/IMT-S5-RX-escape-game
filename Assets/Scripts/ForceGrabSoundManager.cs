@@ -5,11 +5,12 @@ using UnityEngine;
 public class ForceGrabSoundManager : MonoBehaviour
 {
     public AudioSource loopAudioSource;
-    public DistanceHandGrabInteractor interactor;
-    public AudioClip loopSound;
+    public DistanceHandGrabInteractable interactable;
     public float easeDuration = 0.5f;
-    public ForcePullManager forcePullManager;
+    public ActiveStateGroup forcePullActiveState;
 
+    [Range(0.0f, 1.0f)]
+    public float targetVolume = 1f;
 
     private bool isFadingIn = false;
     private bool isFadingOut = false;
@@ -17,20 +18,15 @@ public class ForceGrabSoundManager : MonoBehaviour
     private float fadeStartVolume;
     private bool _isPulling = false;
 
-    private void Start()
+    private void SetIsPulling(bool isPulling)
     {
-        forcePullManager.OnForcePullStart += SetIsPulling;
-        forcePullManager.OnForcePullEnd += SetIsPulling;
-    }
-
-    private void SetIsPulling()
-    {
-        _isPulling = !_isPulling;
+        _isPulling = isPulling;
     }
    
     void Update()
     {
-        bool isGrabbing = interactor.IsGrabbing;
+        SetIsPulling(forcePullActiveState.Active);
+        bool isGrabbing = interactable.SelectingInteractors.Count != 0;
 
         if (isGrabbing && !_isPulling && !isFadingIn && !loopAudioSource.isPlaying)
         {
@@ -50,7 +46,6 @@ public class ForceGrabSoundManager : MonoBehaviour
         fadeStartTime = Time.time;
         fadeStartVolume = 0f;
 
-        loopAudioSource.clip = loopSound;
         loopAudioSource.Play();
     }
 
@@ -66,8 +61,7 @@ public class ForceGrabSoundManager : MonoBehaviour
         if (isFadingIn)
         {
             float elapsedTime = Time.time - fadeStartTime;
-            float targetVolume = 1f;
-            loopAudioSource.volume = Mathf.Lerp(0f, 1f, elapsedTime / easeDuration);
+            loopAudioSource.volume = Mathf.Lerp(0f, targetVolume, elapsedTime / easeDuration);
 
             if (elapsedTime > easeDuration)
             {

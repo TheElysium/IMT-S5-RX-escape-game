@@ -1,18 +1,17 @@
 using Oculus.Interaction;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ForcePullSoundManager : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public ForcePullManager forcePullManager;
+    public AudioSource audioSourceRight;
+    public ForcePullManager forcePullManagerRight;
+
+    public AudioSource audioSourceLeft;
+    public ForcePullManager forcePullManagerLeft;
 
     private void Start()
     {
-        if (forcePullManager)
-        {
-            forcePullManager.OnForcePullStart += audioSource.Play;
-        }
+        forcePullManagerRight.OnForcePullStart += audioSourceRight.Play;
+        forcePullManagerLeft.OnForcePullStart += audioSourceLeft.Play;
     }
 }
