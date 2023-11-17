@@ -16,6 +16,8 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
     private float elapsedTime = 0.0f;
     private Vector3 velocity = Vector3.zero;
 
+
+
     public void Initialize(IGrabbable grabbable)
     {
         _grabbable = grabbable;
@@ -38,7 +40,7 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
         grabbableRigidbody.velocity = velocity;
         grabbableRigidbody.useGravity = false;
     }
-
+        
     public void UpdateTransform()
     {
         // Add delay to movement
@@ -54,6 +56,7 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
     private void SmoothMovement(Pose grabPoint)
     {
         grabbableRigidbody.Sleep();
+        grabbableRigidbody.constraints = RigidbodyConstraints.FreezeRotation;
         grabbableRigidbody.MoveRotation(Quaternion.Slerp(grabbableRigidbody.rotation, grabPoint.rotation * _grabDeltaInLocalSpace.rotation, Time.deltaTime * smoothRotationDelay));
         // Position is smoothed, following a curve (non-linear)  https://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html
         grabbableRigidbody.MovePosition(Vector3.SmoothDamp(grabbableRigidbody.position, grabPoint.position - grabbableRigidbody.transform.TransformVector(_grabDeltaInLocalSpace.position), ref velocity, smoothPositionDelay));
