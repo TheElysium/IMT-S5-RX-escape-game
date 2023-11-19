@@ -26,11 +26,11 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
         Pose grabPoint = _grabbable.GrabPoints[0];
         Transform grabbableTransform = _grabbable.Transform;
         velocity = Vector3.zero;
-        
+
         // From OculusIntegrationSDK.OneGrabFreeTransformer
         // Calculate offset (position and rotation) between hand and grabbable object
         _grabDeltaInLocalSpace = new Pose(
-            grabbableTransform.InverseTransformVector(grabPoint.position - grabbableTransform.position), 
+            grabbableTransform.InverseTransformVector(grabPoint.position - grabbableTransform.position),
             Quaternion.Inverse(grabPoint.rotation) * grabbableTransform.rotation
         );
 
