@@ -17,7 +17,10 @@ public class RoomTwoManager : MonoBehaviour
     private void HandleCardRead()
     {
         if (isSmallDoorOpened) return;
-        smallDoor.transform.Translate(new Vector3(0,10,0));
+        isSmallDoorOpened = true;
+        Animator smallDoorAnimation = smallDoor.GetComponent<Animator>();
+        smallDoorAnimation.enabled = true;
+        smallDoorAnimation.Play("glass_door_open");
     }
 
     // Update is called once per frame
