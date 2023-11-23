@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 276380954
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 216a5fbf2c224e5725c41a2bb60925ad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_SnapTurn.wav
+- Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Teleport.wav
+- Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Declined.wav
+Dependencies: []

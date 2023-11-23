@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 3016331653
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2a8bf2ed4dc025e8d580c72e70948969
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4e507aaf7f0431856d0e2120317b7c8b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Art/Models/mouse droid.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/glass_panel_1_door.fbx
+- Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Right.fbx
+- Assets/Art/Models/card.fbx
+- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Left.fbx
+- Assets/Oculus/Interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx
+- Assets/Oculus/VR/Meshes/HandTracking/OculusHand_R.fbx
+- Assets/Oculus/VR/Meshes/HandTracking/OculusHand_L.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/wall_small_no_side_full_LOD0.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/cabinet.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/bunk_bed.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/floor_2_blank.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/frame_door_2.fbx
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/MetaQuestTouchPlus_Right.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/door_2_right.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/pilot_seat.fbx
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPro/MetaQuestTouchPro_Left.fbx
+- Assets/Sci-Fi Styled Modular Pack/Models/glass_panel_1_with_door.fbx
+Dependencies:
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_shader0

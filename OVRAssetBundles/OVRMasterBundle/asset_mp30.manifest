@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2865600336
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0fddf8deb8e03291c268aafea291d80b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Level/Audio/Force/force_grab_loop.mp3
+- Assets/Level/Audio/Force/force_pull.mp3
+- Assets/Art/Audio/Star Wars Alarm Sound.mp4.mp3
+- Assets/Art/Audio/Outer Space - Sound Effect.mp3
+Dependencies: []

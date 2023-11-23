@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 614397836
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0a7cf1349490255af51e964599f9ef1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 82515b3694a1e5beae009c48c1198c34
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus/Interaction/Runtime/Materials/CrossMaterial.mat
+- Assets/Oculus/VR/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.mat
+- Assets/Sci-Fi Styled Modular Pack/Materials/window.mat
+Dependencies:
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_tga0
