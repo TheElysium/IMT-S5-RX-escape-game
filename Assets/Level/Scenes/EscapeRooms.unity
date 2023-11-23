@@ -12081,7 +12081,7 @@ MonoBehaviour:
   loopAudioSource: {fileID: 5360334942485769107}
   interactable: {fileID: 6987631116441948937}
   easeDuration: 0.5
-  forcePullActiveState: {fileID: 0}
+  forcePullActiveState: {fileID: 39251447}
   targetVolume: 0.7
 --- !u!82 &5360334942485769107
 AudioSource:
