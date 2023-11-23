@@ -6,12 +6,14 @@ public class CardReader : MonoBehaviour
 {
     public delegate void CardReaderHandler();
     public event CardReaderHandler OnCardRead;
+
+    public Material okMaterial;
     private void OnTriggerEnter(Collider other)
     {
         Debug.LogWarning(other.tag);
         if (!other.CompareTag("Card"))  return;
 
         OnCardRead?.Invoke();
-        // CHANGER LE TEXTE 
+        GetComponent<MeshRenderer>().material = okMaterial;
     }
 }
