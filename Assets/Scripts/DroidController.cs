@@ -7,20 +7,22 @@ public class DroidController : MonoBehaviour
     public AudioSource audioSource;
     private bool isStarted = false;
 
+    private WaypointMover waypointMover;
+    private Animator animator;
+
     public delegate void DroidStart();
     public event DroidStart OnDroidStart;
 
-    public WaypointMover waypointMover;
-    private Animator animator;
-
     public delegate void MovementEnded();
     public event MovementEnded OnMovementEnded;
+
 
     [Range(0f, 5f)]
     public float movementDelay = 1f;
 
     private void Start()
     {
+        waypointMover = GetComponent<WaypointMover>();
         waypointMover.OnMovementEnded += HandleMovementEnded;
         animator = GetComponent<Animator>();
     }
@@ -31,18 +33,26 @@ public class DroidController : MonoBehaviour
         animator.SetTrigger("TrIdle");
         isStarted = true;
         OnDroidStart?.Invoke();
-        Invoke("startMovement", movementDelay);
+        Invoke("StartMovement", movementDelay);
     }
 
-    private void startMovement()
+    private void StartMovement()
     {
-        Debug.LogWarning("startmvmt");
         waypointMover.enabled = true;
     }
 
     private void HandleMovementEnded()
     {
         animator.SetTrigger("TrOpenArm");
+    }
 
+    private void HandleDroidHandAnimationEnded()
+    {
+        OnMovementEnded?.Invoke();
+    }
+
+    public void HandleUnlockEnded()
+    {
+        animator.SetTrigger("TrCloseArm");
     }
 }

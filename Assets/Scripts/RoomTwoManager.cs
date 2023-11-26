@@ -7,6 +7,8 @@ public class RoomTwoManager : MonoBehaviour
     public CardReader cardReader;
     public GameObject smallDoor;
     public DroidController droidController;
+    public DoorLockController doorLockController;
+    public Animator doorAnimator;
 
     private bool isDroidStarted = false;
 
@@ -16,6 +18,8 @@ public class RoomTwoManager : MonoBehaviour
     {
         cardReader.OnCardRead += HandleCardRead;
         droidController.OnDroidStart += HandleDroidStart;
+        droidController.OnMovementEnded += HandleDroidMovementEnded;
+        doorLockController.OnDoorUnlocked += HandleDoorUnlocked;
     }
 
     private void HandleCardRead()
@@ -32,9 +36,14 @@ public class RoomTwoManager : MonoBehaviour
         isDroidStarted = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HandleDroidMovementEnded()
     {
-        
+        doorLockController.startAnimation();
+    }
+
+    private void HandleDoorUnlocked()
+    {
+        droidController.HandleUnlockEnded();
+        doorAnimator.SetTrigger("TrDoorOpen");
     }
 }

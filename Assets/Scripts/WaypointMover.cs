@@ -40,9 +40,10 @@ public class WaypointMover : MonoBehaviour
         if(Vector3.Distance(transform.position, currentWaypoint.position) < distanceTreshold)
         {
             Transform nextWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
-            if (nextWaypoint == currentWaypoint)
+            if (nextWaypoint == null)
             {
                 isMovementEnded = true;
+                Debug.LogWarning("movement ended");
                 OnMovementEnded?.Invoke();
             }
             else

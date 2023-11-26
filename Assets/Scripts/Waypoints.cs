@@ -33,7 +33,7 @@ public class Waypoints : MonoBehaviour
         }
         else
         {
-            return currentWaypoint;
+            return null;
         }
     }
 }
