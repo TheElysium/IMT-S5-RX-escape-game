@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2258268802
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a09942e2d8a28c00e67d81d720a020b5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c21d61fe394c58399df3c6fb5c7c99b3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus/VR/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Normals.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Metallic.png
+- Assets/Sci-Fi Styled Modular Pack/Textures/base-color-normal.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Left_BaseColor_AO.png
+- Assets/Sci-Fi Styled Modular Pack/Textures/window_big.png
+- Assets/Sci-Fi Styled Modular Pack/Textures/window_big_emission_mask.png
+- Assets/Sci-Fi Styled Modular Pack/Textures/window_big_transparent_mask.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Right_BaseColor_AO.png
+- Assets/Sci-Fi Styled Modular Pack/Textures/mettalic.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPro/controller_l_lo_Normal.png
+- Assets/Oculus/Interaction/Runtime/Textures/RainbowGradient.png
+- Assets/Oculus/VR/Textures/OculusTouchForRift/touchController_albedo.png
+- Assets/Sci-Fi Styled Modular Pack/Textures/lattice.png
+- Assets/Oculus/Interaction/Runtime/Textures/fingers_glow_mask.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPro/controller_r_lo_Normal.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPro/controller_r_lo_BaseColor.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPro/controller_l_lo_BaseColor.png
+- Assets/Oculus/VR/Textures/MetaQuestTouchPro/batteryIndicatorTexture32.png
+- Assets/Oculus/Interaction/Runtime/Textures/Reticle-Dot.png
+Dependencies: []

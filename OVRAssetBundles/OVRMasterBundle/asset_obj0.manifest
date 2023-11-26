@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 398212894
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 98b4db35d9cd93b719a8013567731336
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fee1c6e80ce93dc43c78a279afa71396
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Art/Models/R5-J2.obj
+- Assets/Art/Models/helmet.obj
+Dependencies:
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_shader0

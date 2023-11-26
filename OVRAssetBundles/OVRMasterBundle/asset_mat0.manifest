@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 1191699717
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 43509a01804cb3e4172bb486ff57bcd6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 82515b3694a1e5beae009c48c1198c34
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat
+- Assets/Oculus/Interaction/Runtime/Materials/ProceduralArcMaterial.mat
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat
+- Assets/Art/Materials/Room/Green glow.mat
+- Assets/Sci-Fi Styled Modular Pack/Materials/lattice.mat
+- Assets/Art/Materials/Room/Red Glow.mat
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.mat
+- Assets/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat
+- Assets/Art/Materials/Droid/DroidMetalicPart2.mat
+- Assets/Oculus/VR/Meshes/OculusTouchForRift/Materials/OculusTouchForRift_Material.mat
+- Assets/Art/Materials/Droid/DroidMetalicParts1.mat
+- Assets/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat
+- Assets/Art/Materials/Droid/DroidBase.mat
+- Assets/Art/Materials/Helmet/White Helmet.mat
+- Assets/Oculus/Interaction/Runtime/Materials/LocomotionIndicatorMaterial.mat
+- Assets/Art/Materials/Helmet/Black material.mat
+- Assets/Sci-Fi Styled Modular Pack/Materials/white emision.mat
+- Assets/Sci-Fi Styled Modular Pack/Materials/blue emission.mat
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/batteryIndicator_mat.mat
+- Assets/Oculus/Interaction/Runtime/Materials/OculusHand.mat
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.mat
+- Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_right.mat
+- Assets/Art/Materials/Room/Wall.mat
+- Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
+- Assets/Oculus/Interaction/Runtime/Materials/HotspotMaterial.mat
+- Assets/Art/Materials/Hand.mat
+- Assets/Oculus/Interaction/Runtime/Materials/Unlit Material.mat
+- Assets/Art/Materials/Room/Glass.mat
+- Assets/Sci-Fi Styled Modular Pack/Models/Materials/base color.mat
+- Assets/Sci-Fi Styled Modular Pack/Models/Materials/No Name.mat
+Dependencies:
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_tga0

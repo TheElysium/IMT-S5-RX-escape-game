@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 4256700334
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 693b5ef2f2c773114345a0eadcbbca27
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dbff26cfbd5e209b7b50e0bc40d800f1
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 4cfe1df7ed391a24fbe2a2d275e81b06, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c5af6ab9d1bd4a47970ad151090281f3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac666f23650b94b4ea891467ab3677e5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.PoseDetection.FingerFeatureStateThreshold
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.PoseDetection.FingerFeatureThresholds
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfig
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfigList
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.PoseDetection.TransformFeatureStateThreshold
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.PoseDetection.TransformFeatureThresholds
+Assets:
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/PoseDetection/MiddleFingerFeatureStateThresholds.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/Locomotion/LocomotionThumbFeatureStateThresholds.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/PoseDetection/DefaultThumbFeatureStateThresholds.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/Locomotion/LShape.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/Locomotion/RelaxedCurl.asset
+- Assets/Oculus/Interaction/Samples/Poses/Shapes/FingersAllClosed.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/Locomotion/OpenIndex.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/PoseDetection/DefaultFingerFeatureStateThresholds.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/Locomotion/LocomotionMiddleFeatureStateThresholds.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/Locomotion/LocomotionIndexFeatureStateThresholds.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/PoseDetection/DefaultTransformFeatureStateThresholds.asset
+- Assets/Level/Scenes/NavMesh/NavMesh.asset
+- Assets/Oculus/Interaction/Runtime/DefaultSettings/PoseDetection/IndexFingerFeatureStateThresholds.asset
+Dependencies: []

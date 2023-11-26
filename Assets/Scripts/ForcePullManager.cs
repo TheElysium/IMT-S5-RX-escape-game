@@ -33,7 +33,7 @@ public class ForcePullManager : MonoBehaviour
         ManageMovementProvider<ForcePullMovementProvider>(interactable);
         distanceHandGrabInteractor.Unselect();
         distanceHandGrabInteractor.Select();
-        OnForcePullStart.Invoke();
+        OnForcePullStart?.Invoke();
     }
 
     public void ResetMovementProvider()
@@ -41,6 +41,6 @@ public class ForcePullManager : MonoBehaviour
         DistanceHandGrabInteractable interactable = distanceHandGrabInteractor.SelectedInteractable;
         if (interactable == null) return;
         ManageMovementProvider<MoveFromTargetProvider>(interactable);
-        OnForcePullEnd.Invoke();
+        OnForcePullEnd?.Invoke();
     }
 }

@@ -1,0 +1,83 @@
+ManifestFileVersion: 0
+CRC: 213448976
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 29dddee52cecf7a5f0f939745d2303da
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c83154dd5f05df2b6506d0f9d4ed1c6a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 66d234aad7c203b4386e5be969affffc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 60ec6eccfc1a9af48889199572a6a12c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 395a6065734945f43a387c66954c6997, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b1ef64888a00e2347a0d0d0a3f71f6d9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 953054d108799b942815afb3405983ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0529a9671a3b6a74fab00c4d05312c64, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 243
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.Grab.PoseMeasureParameters
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.GrabAPI.GrabbingRule
+- AssemblyName: Oculus.Interaction
+  ClassName: Oculus.Interaction.HandGrab.PoseTravelData
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+Assets:
+- Assets/Level/Prefabs/Props/Card.prefab
+Dependencies:
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_fbx1
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_mixer0
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_mp30
+- C:/Users/lukas/Documents/IMT/RX/Projet RX/OVRAssetBundles/OVRMasterBundle/asset_png0
