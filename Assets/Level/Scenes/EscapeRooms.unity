@@ -16451,7 +16451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 270890915719048327, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 420482673374839299, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -16459,7 +16459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420482673374839299, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 914139379853508562, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -16467,7 +16467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 914139379853508562, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4100392163103286944, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_RootOrder
@@ -16523,7 +16523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4100392163103560152, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4100392163103640150, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_NavMeshLayer
@@ -16531,7 +16531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4100392163103640150, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54ec3aa67e2b11747b8e162be904db1c, type: 3}

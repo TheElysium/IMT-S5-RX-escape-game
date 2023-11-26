@@ -77,7 +77,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _allowTeleport: 1
+  _allowTeleport: 0
   _equalDistanceToBlockerOverride: 0
   _tieBreakerScore: 0
   _surface: {fileID: 4978857097339576474}
@@ -176,7 +176,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _allowTeleport: 1
+  _allowTeleport: 0
   _equalDistanceToBlockerOverride: 0
   _tieBreakerScore: 0
   _surface: {fileID: 4605538421029368628}
@@ -277,7 +277,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _allowTeleport: 1
+  _allowTeleport: 0
   _equalDistanceToBlockerOverride: 0
   _tieBreakerScore: 0
   _surface: {fileID: 6936352074074860894}
@@ -523,7 +523,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _allowTeleport: 1
+  _allowTeleport: 0
   _equalDistanceToBlockerOverride: 0
   _tieBreakerScore: 0
   _surface: {fileID: 2946687909451772342}
