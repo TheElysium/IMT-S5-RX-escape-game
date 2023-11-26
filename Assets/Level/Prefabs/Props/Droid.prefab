@@ -139,7 +139,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 1da55ce484f1e7b46b31b5e77d5f8068, type: 2}
-  - {fileID: -8078617138743364992, guid: 029637052fb964545ade65bb231002a9, type: 3}
+  - {fileID: 2100000, guid: 9f27da55a5541e6479b447f678fe26db, type: 2}
   - {fileID: 2100000, guid: 1cf4d6a8bd8a7054aa219a411ee8da1f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -688,7 +688,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9f27da55a5541e6479b447f678fe26db, type: 2}
+  - {fileID: 2100000, guid: 1cf4d6a8bd8a7054aa219a411ee8da1f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  waypointMover: {fileID: 0}
+  movementDelay: 1
 --- !u!1 &6120229168730926456
 GameObject:
   m_ObjectHideFlags: 0
