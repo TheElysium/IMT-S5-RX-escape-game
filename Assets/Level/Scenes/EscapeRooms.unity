@@ -560,6 +560,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.28
       objectReference: {fileID: 0}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: interactable
+      value: 
+      objectReference: {fileID: 44831249}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: forcePullActiveState
+      value: 
+      objectReference: {fileID: 39251447}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
 --- !u!4 &44831247 stripped
@@ -576,6 +584,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &44831249 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7678144806746621792, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+  m_PrefabInstance: {fileID: 44831246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &59693231
@@ -1850,17 +1869,6 @@ Transform:
   m_Father: {fileID: 482623311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10.078234, y: 7.983246, z: -10.099675}
---- !u!114 &181818353 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7706882778755806734, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354317724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &191315815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +2675,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.0059
       objectReference: {fileID: 0}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: interactable
+      value: 
+      objectReference: {fileID: 252864228}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: forcePullActiveState
+      value: 
+      objectReference: {fileID: 39251447}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
 --- !u!4 &252864226 stripped
@@ -2683,6 +2699,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &252864228 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7678144806746621792, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+  m_PrefabInstance: {fileID: 252864225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &258121413
@@ -4105,6 +4132,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378106015}
   m_CullTransparentMesh: 1
+--- !u!1 &381469759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706882777701113739, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &381469760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7706882777701113740, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381469759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &381469762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1687142707, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381469759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &381469763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381469759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 381469760}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 381469762}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnSelectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 381469762}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnUnselectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &388341601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5222,6 +5337,83 @@ Transform:
   m_Father: {fileID: 1213765763}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -23.309578, y: 17.705233, z: -5.847483}
+--- !u!1 &484426719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706882777115945480, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &484426722 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1660654302, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484426719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &484426723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484426719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 0}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 484426722}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnSelectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 484426722}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnUnselectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &484688358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5500,17 +5692,6 @@ MonoBehaviour:
     - {x: 0.08728396, y: 0.015210293, z: -0.08764866, w: 0.99220365}
     - {x: -0.072166495, y: 0.021992946, z: -0.42206842, w: 0.90341944}
     - {x: 0.0015651118, y: -0.04743194, z: -0.24942932, w: 0.96722984}
---- !u!114 &512073097 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7706882777701113740, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687142706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &518200024
 GameObject:
   m_ObjectHideFlags: 0
@@ -8340,6 +8521,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 826504396038804960, guid: 856a5afa37ff7ec44a1b397bfe9a3a78, type: 3}
   m_PrefabInstance: {fileID: 792141781}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &795889251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795889252}
+  - component: {fileID: 795889253}
+  m_Layer: 0
+  m_Name: Room3Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &795889252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795889251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1434366369}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &795889253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795889251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7097ad7119875468c6aa74b0da95a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetariumManager: {fileID: 1788845963}
 --- !u!1 &813513689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8530,6 +8756,94 @@ Transform:
   m_Father: {fileID: 1213765763}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -5.364988, y: 12.962796, z: -14.222377}
+--- !u!1 &849174334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706882778755806733, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &849174335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1354317725, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849174334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &849174336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7706882778755806734, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849174334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &849174338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849174334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 849174336}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 849174335}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnSelectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 849174335}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnUnselectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &852147454
 GameObject:
   m_ObjectHideFlags: 0
@@ -9561,6 +9875,94 @@ Transform:
   m_Father: {fileID: 437876695}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -30}
+--- !u!1 &981831705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706882776971001467, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &981831706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7706882776971001468, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981831705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &981831708 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1788845966, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981831705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &981831709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981831705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 981831706}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 981831708}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnSelectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 981831708}
+        m_TargetAssemblyTypeName: PlanetariumPlanetHandler, Assembly-CSharp
+        m_MethodName: OnUnselectSnapPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &981912220
 GameObject:
   m_ObjectHideFlags: 0
@@ -11658,6 +12060,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.0059
       objectReference: {fileID: 0}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: interactable
+      value: 
+      objectReference: {fileID: 1273508195}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: forcePullActiveState
+      value: 
+      objectReference: {fileID: 39251447}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
 --- !u!4 &1273508193 stripped
@@ -11674,6 +12084,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1273508195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7678144806746621792, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+  m_PrefabInstance: {fileID: 1273508192}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1278447787
@@ -12298,25 +12719,6 @@ Transform:
   m_Father: {fileID: 1490485682}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -179.914, z: 0}
---- !u!1 &1354317724 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7706882778755806733, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1354317725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354317724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapInteractor: {fileID: 44831248}
-  snapInteractable: {fileID: 181818353}
 --- !u!1001 &1368376300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13221,6 +13623,7 @@ Transform:
   - {fileID: 44831247}
   - {fileID: 1273508193}
   - {fileID: 1608125465}
+  - {fileID: 795889252}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14908,6 +15311,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.0084
       objectReference: {fileID: 0}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: interactable
+      value: 
+      objectReference: {fileID: 1608125467}
+    - target: {fileID: 6260127273934894687, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: forcePullActiveState
+      value: 
+      objectReference: {fileID: 39251447}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
 --- !u!4 &1608125465 stripped
@@ -14924,6 +15335,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1608125467 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7678144806746621792, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+  m_PrefabInstance: {fileID: 1608125464}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1610328022 stripped
@@ -15525,36 +15947,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3494213234042316407, guid: 4c4a7628b15865543a092f4c76e9fa52, type: 3}
   m_PrefabInstance: {fileID: 1653990767}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1660654300 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7706882777115945481, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660654301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1660654301 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7706882777115945480, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1660654302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660654301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapInteractor: {fileID: 1608125466}
-  snapInteractable: {fileID: 1660654300}
 --- !u!1 &1668329049
 GameObject:
   m_ObjectHideFlags: 0
@@ -15838,25 +16230,6 @@ MonoBehaviour:
   _handAligment: 1
   _handGrabPoses:
   - {fileID: 741799231}
---- !u!1 &1687142706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7706882777701113739, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1687142707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687142706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapInteractor: {fileID: 1273508194}
-  snapInteractable: {fileID: 512073097}
 --- !u!1001 &1689319828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16693,9 +17066,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1434366369}
     m_Modifications:
+    - target: {fileID: 1354317725, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+      propertyPath: snapInteractor
+      value: 
+      objectReference: {fileID: 44831248}
+    - target: {fileID: 1660654302, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+      propertyPath: snapInteractor
+      value: 
+      objectReference: {fileID: 1608125466}
+    - target: {fileID: 1687142707, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+      propertyPath: snapInteractor
+      value: 
+      objectReference: {fileID: 1273508194}
+    - target: {fileID: 1788845966, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+      propertyPath: snapInteractor
+      value: 
+      objectReference: {fileID: 252864227}
     - target: {fileID: 7706882778988378024, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
       propertyPath: m_Name
-      value: Test Planetarium 1
+      value: Planetarium
       objectReference: {fileID: 0}
     - target: {fileID: 7706882778988378025, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
       propertyPath: m_RootOrder
@@ -16748,58 +17137,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7706882778988378025, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
   m_PrefabInstance: {fileID: 1788845960}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1788845962 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7706882778988378024, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+--- !u!114 &1788845963 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1788845963, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
   m_PrefabInstance: {fileID: 1788845960}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1788845963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788845962}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f15124b0543e55e48aaa117b27eeecbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetariumPlanetHandlers:
-  - {fileID: 1788845966}
-  - {fileID: 1687142707}
-  - {fileID: 1660654302}
-  - {fileID: 1354317725}
---- !u!114 &1788845964 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7706882776971001468, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788845965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1788845965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7706882776971001467, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
-  m_PrefabInstance: {fileID: 1788845960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1788845966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788845965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapInteractor: {fileID: 252864227}
-  snapInteractable: {fileID: 1788845964}
 --- !u!4 &1790791160 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1909931584712086210, guid: 6e53f429d1505754489bd93242b78db3, type: 3}

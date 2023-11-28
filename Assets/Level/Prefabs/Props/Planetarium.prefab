@@ -494,6 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7706882776971001469}
   - component: {fileID: 7706882776971001468}
+  - component: {fileID: 1788845966}
   m_Layer: 0
   m_Name: SnapInteractable
   m_TagString: Untagged
@@ -535,6 +536,20 @@ MonoBehaviour:
   _rigidbody: {fileID: 3920296510373764077}
   _snapPoseDelegate: {fileID: 0}
   _movementProvider: {fileID: 0}
+--- !u!114 &1788845966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706882776971001467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapInteractor: {fileID: 0}
+  snapInteractable: {fileID: 7706882776971001468}
 --- !u!1 &7706882776984935050
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7706882777115945482}
   - component: {fileID: 7706882777115945481}
+  - component: {fileID: 1660654302}
   m_Layer: 0
   m_Name: SnapInteractable
   m_TagString: Untagged
@@ -635,6 +651,20 @@ MonoBehaviour:
   _rigidbody: {fileID: 8223671124418764989}
   _snapPoseDelegate: {fileID: 0}
   _movementProvider: {fileID: 0}
+--- !u!114 &1660654302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706882777115945480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapInteractor: {fileID: 0}
+  snapInteractable: {fileID: 7706882777115945481}
 --- !u!1 &7706882777301266108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,6 +1223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7706882777701113741}
   - component: {fileID: 7706882777701113740}
+  - component: {fileID: 1687142707}
   m_Layer: 0
   m_Name: SnapInteractable
   m_TagString: Untagged
@@ -1234,6 +1265,20 @@ MonoBehaviour:
   _rigidbody: {fileID: 5572750910714298271}
   _snapPoseDelegate: {fileID: 0}
   _movementProvider: {fileID: 0}
+--- !u!114 &1687142707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706882777701113739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapInteractor: {fileID: 0}
+  snapInteractable: {fileID: 7706882777701113740}
 --- !u!1 &7706882777723119013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,6 +2346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7706882778755806735}
   - component: {fileID: 7706882778755806734}
+  - component: {fileID: 1354317725}
   m_Layer: 0
   m_Name: SnapInteractable
   m_TagString: Untagged
@@ -2342,6 +2388,20 @@ MonoBehaviour:
   _rigidbody: {fileID: 5392987358619582043}
   _snapPoseDelegate: {fileID: 0}
   _movementProvider: {fileID: 0}
+--- !u!114 &1354317725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706882778755806733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce90a5502886c648828fd8316102acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapInteractor: {fileID: 0}
+  snapInteractable: {fileID: 7706882778755806734}
 --- !u!1 &7706882778988378024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,6 +2411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7706882778988378025}
+  - component: {fileID: 1788845963}
   m_Layer: 0
   m_Name: Planetarium
   m_TagString: Untagged
@@ -2375,6 +2436,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1788845963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706882778988378024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15124b0543e55e48aaa117b27eeecbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetariumPlanetHandlers:
+  - {fileID: 1788845966}
+  - {fileID: 1687142707}
+  - {fileID: 1660654302}
+  - {fileID: 1354317725}
 --- !u!1 &7706882779000918709
 GameObject:
   m_ObjectHideFlags: 0
