@@ -1,27 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlanetariumManager : MonoBehaviour
 {
     public PlanetariumPlanetHandler[] planetariumPlanetHandlers;
-    private int snappedPlanetsCount;
+    private Dictionary<int, bool> planetariumPlanetsDict;
 
     public delegate void AllPlanetsSnappedEvent();
     public event AllPlanetsSnappedEvent OnAllPlanetsSnappedEvent;
 
     private void Start()
     {
-        foreach(PlanetariumPlanetHandler handler in planetariumPlanetHandlers)
+        planetariumPlanetsDict = new Dictionary<int, bool>();
+
+        for (int i = 0; i < planetariumPlanetHandlers.Length; i++)
         {
-            handler.OnSelectSnapPlanetEvent += () => { snappedPlanetsCount++; };
-            handler.OnUnselectSnapPlanetEvent += () => { snappedPlanetsCount--; };
+            PlanetariumPlanetHandler handler = planetariumPlanetHandlers[i];
+            handler.OnSelectSnapPlanetEvent += HandlePlanetSelect;
+            handler.OnUnselectSnapPlanetEvent += HandlePlanetUnselect;
+            handler.SetId(i);
+            planetariumPlanetsDict[i] = false;
         }
     }
 
-    private void Update()
+    private void HandlePlanetSelect(int id)
     {
-        if(planetariumPlanetHandlers.Length == snappedPlanetsCount)
+        planetariumPlanetsDict[id] = true;
+        CheckAllPlanetsSnapped();
+    }
+
+    private void HandlePlanetUnselect(int id)
+    {
+        planetariumPlanetsDict[id] = false;
+    }
+
+    private void CheckAllPlanetsSnapped()
+    {
+        if (planetariumPlanetsDict.Values.All(value => value))
         {
             OnAllPlanetsSnappedEvent?.Invoke();
         }

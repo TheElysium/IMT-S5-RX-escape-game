@@ -5342,6 +5342,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7706882777115945480, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
   m_PrefabInstance: {fileID: 1788845960}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &484426720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7706882777115945481, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
+  m_PrefabInstance: {fileID: 1788845960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484426719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &484426722 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1660654302, guid: 6c6f2e4e5b263534088e1eda1aa3af16, type: 3}
@@ -5365,7 +5376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactableView: {fileID: 0}
+  _interactableView: {fileID: 484426720}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
