@@ -5,6 +5,7 @@ using UnityEngine;
 public class RoomThreeManager : MonoBehaviour
 {
     public PlanetariumManager planetariumManager;
+    public Animator doorAnimation;
 
     void Start()
     {
@@ -14,11 +15,6 @@ public class RoomThreeManager : MonoBehaviour
 
     private void HandlePlanetariumCompleted()
     {
-        Debug.LogWarning("planetarium completed (from manager");
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+        doorAnimation.SetTrigger("TrDoorOpen");
     }
 }
