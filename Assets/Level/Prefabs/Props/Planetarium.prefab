@@ -1076,7 +1076,7 @@ MonoBehaviour:
   _editor: {fileID: 7706882777621059122}
   _colorShaderPropertyName: _BorderColor
   _normalColorState:
-    Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+    Color: {r: 0, g: 0.6117647, b: 1, a: 0.19607843}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -1103,7 +1103,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     ColorTime: 0.1
   _hoverColorState:
-    Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+    Color: {r: 0, g: 0.6117647, b: 1, a: 0.78431374}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
@@ -1130,7 +1130,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     ColorTime: 0.1
   _selectColorState:
-    Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+    Color: {r: 0, g: 0.6117647, b: 1, a: 0.19607843}
     ColorCurve:
       serializedVersion: 2
       m_Curve:
