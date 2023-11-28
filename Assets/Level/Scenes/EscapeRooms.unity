@@ -472,6 +472,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 855131390749405241, guid: d65e6de79bf6c1e41918562b4be74edf, type: 3}
+    - target: {fileID: 3069960988548991926, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 855131390749405241, guid: d65e6de79bf6c1e41918562b4be74edf, type: 3}
     - target: {fileID: 3069960988548991930, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
       propertyPath: m_LocalScale.x
       value: 100.00002
@@ -526,6 +530,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7678144806387778991, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621804, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1636492
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621804, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621805, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621805, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -1276,6 +1296,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 855131390749405241, guid: d65e6de79bf6c1e41918562b4be74edf, type: 3}
+    - target: {fileID: 3069960988548991926, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 855131390749405241, guid: d65e6de79bf6c1e41918562b4be74edf, type: 3}
     - target: {fileID: 3069960988548991930, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
       propertyPath: m_LocalScale.x
       value: 100
@@ -1330,6 +1354,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7678144806387778991, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621804, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1670228
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621804, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.8275645e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621805, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678144806746621805, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
+      propertyPath: _whenUnselect.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -6896,8 +6936,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leverTriggerHandler: {fileID: 2088382960}
-  doorLeft: {fileID: 0}
-  doorRight: {fileID: 0}
+  doorLeft: {fileID: 684824660}
+  doorRight: {fileID: 1362897767}
 --- !u!4 &610985145
 Transform:
   m_ObjectHideFlags: 0
