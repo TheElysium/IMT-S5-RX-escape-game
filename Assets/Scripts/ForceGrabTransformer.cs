@@ -8,7 +8,7 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
 {
     public float smoothRotationDelay = 5.0f;
     public float smoothPositionDelay = 0.25f;
-    public bool isForceGrabbed = false;
+    private bool isForceGrabbed = false;
 
     public Rigidbody grabbableRigidbody;
 
@@ -79,6 +79,7 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
     public void GrabbedByForce()
     {
         isForceGrabbed = true;
+        grabbableRigidbody.isKinematic = false;
     }
 
     public void GrabbedByOther()
