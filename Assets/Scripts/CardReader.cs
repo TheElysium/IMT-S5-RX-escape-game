@@ -6,6 +6,7 @@ public class CardReader : MonoBehaviour
 {
     public delegate void CardReaderHandler();
     public event CardReaderHandler OnCardRead;
+    public AudioSource audioSource;
 
     public Material okMaterial;
     private void OnTriggerEnter(Collider other)
@@ -13,6 +14,7 @@ public class CardReader : MonoBehaviour
         Debug.LogWarning(other.tag);
         if (!other.CompareTag("Card"))  return;
 
+        audioSource.Play();
         OnCardRead?.Invoke();
         GetComponent<MeshRenderer>().material = okMaterial;
     }
