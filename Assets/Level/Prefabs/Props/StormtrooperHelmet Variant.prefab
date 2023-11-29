@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6026306816356080928}
   m_Layer: 0
   m_Name: main collider (4)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 3314760042475232071}
   m_Layer: 0
   m_Name: Stormtrooper helmet
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 2185220975215494902}
   m_Layer: 0
   m_Name: helmet
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 8094005106308694916}
   m_Layer: 0
   m_Name: main collider (9)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 1938589824384781179}
   m_Layer: 0
   m_Name: ForceGrabSound
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 6259552521478760621}
   m_Layer: 0
   m_Name: main collider (8)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 5959454759756765513}
   m_Layer: 0
   m_Name: main collider (6)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,9 +449,10 @@ GameObject:
   - component: {fileID: 3494213234042316402}
   - component: {fileID: 3494213234042316363}
   - component: {fileID: 3494213234042316405}
+  - component: {fileID: 4512871610038722205}
   m_Layer: 0
   m_Name: StormtrooperHelmet Variant
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -642,6 +643,18 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4512871610038722205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494213234042316365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dcca0a001cc1e43a4f46e6eaeff89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4297350852372111194
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +667,7 @@ GameObject:
   - component: {fileID: 6405665435080162091}
   m_Layer: 0
   m_Name: main collider (3)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,7 +716,7 @@ GameObject:
   - component: {fileID: 1597189188498171648}
   m_Layer: 0
   m_Name: ObjectVisual
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -819,7 +832,7 @@ GameObject:
   - component: {fileID: 6876568426977277967}
   m_Layer: 0
   m_Name: main collider (2)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -864,7 +877,7 @@ GameObject:
   - component: {fileID: 8976936256196077679}
   m_Layer: 0
   m_Name: main collider (7)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -909,7 +922,7 @@ GameObject:
   - component: {fileID: 3893690265250133324}
   m_Layer: 0
   m_Name: main collider
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -954,7 +967,7 @@ GameObject:
   - component: {fileID: 8127449760806583251}
   m_Layer: 0
   m_Name: main collider (5)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -999,7 +1012,7 @@ GameObject:
   - component: {fileID: 5752585725367606930}
   m_Layer: 0
   m_Name: main collider (1)
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1048,7 +1061,7 @@ GameObject:
   - component: {fileID: 9215445639663510832}
   m_Layer: 0
   m_Name: DistanceHandGrabInteractable
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1207,7 +1220,7 @@ GameObject:
   - component: {fileID: 9215445640047585276}
   m_Layer: 0
   m_Name: SnapInteractor
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1263,7 +1276,7 @@ GameObject:
   - component: {fileID: 9215445640155980056}
   m_Layer: 0
   m_Name: HandGrabInteractable
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

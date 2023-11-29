@@ -8,7 +8,7 @@ public class ObjectFallRecoveryZone : MonoBehaviour
     {
         Debug.LogWarning(other.tag);
         if (other.CompareTag("Grabbable")) {
-            SpawnGrabbable spawnGrabbable = other.transform.parent.GetComponent<SpawnGrabbable>();
+            SpawnGrabbable spawnGrabbable = other.transform.GetComponentInParent<SpawnGrabbable>();
             if (spawnGrabbable == null)
             {
                 Debug.LogWarning("pas de spoawngrabbable");
