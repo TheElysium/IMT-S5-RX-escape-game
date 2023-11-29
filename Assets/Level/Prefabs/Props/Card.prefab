@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 999252166604763396}
   - component: {fileID: 999252166604763403}
   - component: {fileID: 999252166604763398}
+  - component: {fileID: 2273819127062349231}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -419,7 +420,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothRotationDelay: 5
   smoothPositionDelay: 0.25
-  isForceGrabbed: 0
   grabbableRigidbody: {fileID: 999252166604763401}
 --- !u!114 &999252166604763398
 MonoBehaviour:
@@ -506,6 +506,18 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2273819127062349231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999252166604763407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dcca0a001cc1e43a4f46e6eaeff89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2702432711917115227
 GameObject:
   m_ObjectHideFlags: 0

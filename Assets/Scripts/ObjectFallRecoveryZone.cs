@@ -6,15 +6,12 @@ public class ObjectFallRecoveryZone : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogWarning(other.tag);
-        if (other.CompareTag("Grabbable")) {
+        if (other.CompareTag("Grabbable") || other.CompareTag("Card")) {
             SpawnGrabbable spawnGrabbable = other.transform.GetComponentInParent<SpawnGrabbable>();
             if (spawnGrabbable == null)
             {
-                Debug.LogWarning("pas de spoawngrabbable");
                 return;
             }
-            Debug.LogWarning("Devrait respawn");
             spawnGrabbable.Respawn();
         }
     }
