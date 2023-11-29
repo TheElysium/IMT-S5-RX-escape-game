@@ -122,7 +122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothRotationDelay: 5
   smoothPositionDelay: 0.25
-  isForceGrabbed: 0
   grabbableRigidbody: {fileID: 3069960987258718908}
 --- !u!114 &3069960987258718911
 MonoBehaviour:
