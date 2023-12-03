@@ -13,6 +13,8 @@ public class ForcePullManager : MonoBehaviour
     public delegate void ForcePullEndHandler();
     public event ForcePullStartHandler OnForcePullEnd;
 
+    private DistanceHandGrabInteractable lastInteractable = null;
+
     public void ManageMovementProvider<T>(DistanceHandGrabInteractable interactable) where T : MonoBehaviour, IMovementProvider
     {
         T existingProvider = interactable.gameObject.GetComponent<T>();
@@ -33,14 +35,16 @@ public class ForcePullManager : MonoBehaviour
         ManageMovementProvider<ForcePullMovementProvider>(interactable);
         distanceHandGrabInteractor.Unselect();
         distanceHandGrabInteractor.Select();
+        lastInteractable = interactable;
         OnForcePullStart?.Invoke();
     }
 
     public void ResetMovementProvider()
     {
-        DistanceHandGrabInteractable interactable = distanceHandGrabInteractor.SelectedInteractable;
-        if (interactable == null) return;
-        ManageMovementProvider<MoveFromTargetProvider>(interactable);
+/*        DistanceHandGrabInteractable interactable = distanceHandGrabInteractor.SelectedInteractable;
+        if (interactable == null) return;*/
+        ManageMovementProvider<MoveFromTargetProvider>(lastInteractable);
+        lastInteractable = null;
         OnForcePullEnd?.Invoke();
     }
 }

@@ -11,7 +11,8 @@ public class RoomOneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        doorLeft.enabled = false;
+        doorRight.enabled = false;
     }
 
     // Update is called once per frame

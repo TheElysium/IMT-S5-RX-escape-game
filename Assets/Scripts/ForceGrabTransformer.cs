@@ -8,6 +8,7 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
 {
     public float smoothRotationDelay = 5.0f;
     public float smoothPositionDelay = 0.25f;
+    private bool isForceGrabbed = false;
 
     public Rigidbody grabbableRigidbody;
 
@@ -15,6 +16,7 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
     private Pose _grabDeltaInLocalSpace;
     private float elapsedTime = 0.0f;
     private Vector3 velocity = Vector3.zero;
+
 
     public void Initialize(IGrabbable grabbable)
     {
@@ -53,16 +55,35 @@ public class ForceGrabTransformer : MonoBehaviour, ITransformer
 
     private void SmoothMovement(Pose grabPoint)
     {
-        grabbableRigidbody.Sleep();
-        grabbableRigidbody.MoveRotation(Quaternion.Slerp(grabbableRigidbody.rotation, grabPoint.rotation * _grabDeltaInLocalSpace.rotation, Time.deltaTime * smoothRotationDelay));
-        // Position is smoothed, following a curve (non-linear)  https://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html
-        grabbableRigidbody.MovePosition(Vector3.SmoothDamp(grabbableRigidbody.position, grabPoint.position - grabbableRigidbody.transform.TransformVector(_grabDeltaInLocalSpace.position), ref velocity, smoothPositionDelay));
+        if(isForceGrabbed)
+        {
+            grabbableRigidbody.Sleep();
+            grabbableRigidbody.MoveRotation(Quaternion.Slerp(grabbableRigidbody.rotation, grabPoint.rotation * _grabDeltaInLocalSpace.rotation, Time.deltaTime * smoothRotationDelay));
+            // Position is smoothed, following a curve (non-linear)  https://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html
+            grabbableRigidbody.MovePosition(Vector3.SmoothDamp(grabbableRigidbody.position, grabPoint.position - grabbableRigidbody.transform.TransformVector(_grabDeltaInLocalSpace.position), ref velocity, smoothPositionDelay));
+        }
+        else
+        {
+            grabbableRigidbody.MoveRotation(grabPoint.rotation * _grabDeltaInLocalSpace.rotation);
+            grabbableRigidbody.MovePosition(grabPoint.position - grabbableRigidbody.transform.TransformVector(_grabDeltaInLocalSpace.position));
+        }
     }
 
     public void EndTransform()
     {
         grabbableRigidbody.useGravity = true;
         //Ensure continuous smooth movement
-        grabbableRigidbody.velocity += velocity;
+/*        grabbableRigidbody.velocity += velocity;
+*/    }
+
+    public void GrabbedByForce()
+    {
+        isForceGrabbed = true;
+        grabbableRigidbody.isKinematic = false;
+    }
+
+    public void GrabbedByOther()
+    {
+        isForceGrabbed = false;
     }
 }
