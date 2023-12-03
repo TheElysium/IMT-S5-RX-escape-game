@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3069960987258718855, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
       propertyPath: m_Name
-      value: BoxGrabbable
+      value: BoxGrabbable Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3069960987258718909, guid: 03874b6035f2e5147a9d25c4a880cea7, type: 3}
       propertyPath: m_RootOrder
