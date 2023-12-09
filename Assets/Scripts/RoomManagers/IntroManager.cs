@@ -2,28 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IntroManager : MonoBehaviour
 {
     [SerializeField]
     private AudioSource audioSource;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (audioSource.isPlaying) return;
+    [SerializeField]
+    private Animator fadeOutAnimator;
 
-        EndScene();
-    }
+    [SerializeField]
+    private PromptStateHandler promptStateHandler;
 
-    void EndScene()
+    [SerializeField]
+    private FadeHandler fadeHandler;
+
+    private void Start()
     {
-        FadeToBlack();
-        SceneManager.LoadScene("EscapeRooms", LoadSceneMode.Single);
+        promptStateHandler.OnPromptCloseToEndEvent += FadeToBlack;
+        fadeHandler.OnFadeFinishedEvent += ChangeScene;
     }
 
     // (Not a reference to Metallica)
-    void FadeToBlack()
+    private void FadeToBlack()
     {
+        fadeOutAnimator.SetTrigger("TrFadeOut");
+    }
+
+    private void ChangeScene()
+    {
+        SceneManager.LoadScene("EscapeRooms", LoadSceneMode.Single);
     }
 }
