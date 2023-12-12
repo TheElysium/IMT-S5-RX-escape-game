@@ -467,17 +467,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643065168}
-  m_LocalRotation: {x: 0.52918416, y: -0, z: -0, w: 0.84850705}
-  m_LocalPosition: {x: 0, y: 0, z: 129.2}
+  m_LocalRotation: {x: 0.24646868, y: -0, z: -0, w: 0.9691508}
+  m_LocalPosition: {x: 0, y: 0, z: 140.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 573567700}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 63.901, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 28.537, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.6}
+  m_AnchoredPosition: {x: 0, y: -39.5}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643065170
@@ -500,10 +500,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center> Episode FIL\n<size=15\n>THE GREAT ESCAPE</size></align>\n\nJedi,
+  m_text: "<align=center> Episode FIL\n<size=15\n>THE GREAT ESCAPE</size></align>\n\n\n\n\n\n\nJedi,
     the Rebellion has entrusted you with a mission of crucial strategic importance:
     to infiltrate the Imperial interstellar cruiser orbiting Naboo in order to seize
-    the plans for the Empire's new interstellar weapon. Your infiltration has gone
+    the plans of the Empire's new interstellar weapon. Your infiltration has gone
     according to plan, and at last you see the coveted object lying in front of you.
     As you grasp the object, a shrill alarm rips through the silence. All the ship's
     doors slam shut, trapping you inside the room. You'll have to find an ingenious
