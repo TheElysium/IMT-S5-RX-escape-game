@@ -893,6 +893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47079755}
   - component: {fileID: 47079756}
+  - component: {fileID: 47079757}
   m_Layer: 0
   m_Name: End Game Trigger
   m_TagString: Untagged
@@ -923,11 +924,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47079754}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &47079757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47079754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57656db201f63646b7cd79c20134bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &59693231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10316,6 +10329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetariumManager: {fileID: 1788845963}
   doorAnimation: {fileID: 603505730}
+  endGameTriggerHandler: {fileID: 47079757}
+  fadeCanva: {fileID: 306357404}
+  fadeHandler: {fileID: 306357403}
 --- !u!1 &813513689
 GameObject:
   m_ObjectHideFlags: 0
@@ -23615,13 +23631,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 979784379, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986473893994921341, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986473894542317496, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3986473895161724616, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3986473895161724616, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.10010001
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3986473895161724616, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23629,7 +23657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986473895161724616, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3013
+      value: -0.864
       objectReference: {fileID: 0}
     - target: {fileID: 3986473895161724616, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23661,6 +23689,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986473895161724617, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986473895161724617, guid: 5f650acafaf70e94d8fac9ddf46246b1, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
