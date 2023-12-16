@@ -41,7 +41,6 @@ public class ForceGrabSoundManager : MonoBehaviour
 
     void StartFadeIn()
     {
-        Debug.LogWarning("Start fade in");
         isFadingIn = true;
         fadeStartTime = Time.time;
         fadeStartVolume = 0f;
