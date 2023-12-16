@@ -13,6 +13,7 @@ namespace Oculus.Interaction
     public class ForceGrabConstrainedTransformer : MonoBehaviour, ITransformer
     {
         public float smoothPositionDelay = 0.25f;
+        public Rigidbody rb;
         private Vector3 velocity = Vector3.zero;
 
         [Serializable]
@@ -142,7 +143,7 @@ namespace Oculus.Interaction
             }
             if (_parentConstraints.MaxX.Constrain)
             {
-                constrainedPosition.x = Mathf.Min(constrainedPosition.x, _parentConstraints.MaxX.Value);
+                constrainedPosition.x = Mathf.Min(constrainedPosition.x, _parentConstraints.MaxX.Value);    
             }
             if (_parentConstraints.MinY.Constrain)
             {
@@ -167,12 +168,19 @@ namespace Oculus.Interaction
                 constrainedPosition = targetTransform.parent.TransformPoint(constrainedPosition);
             }
 
-            targetTransform.position = Vector3.SmoothDamp(
+            /*            targetTransform.position = Vector3.SmoothDamp(
+                            targetTransform.position,
+                            constrainedPosition,
+                            ref velocity,
+                            smoothPositionDelay
+                        );*/
+
+            rb.MovePosition(Vector3.SmoothDamp(
                 targetTransform.position,
                 constrainedPosition,
                 ref velocity,
                 smoothPositionDelay
-            );
+            ));
         }
 
 

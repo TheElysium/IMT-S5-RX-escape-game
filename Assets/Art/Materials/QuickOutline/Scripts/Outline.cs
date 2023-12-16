@@ -270,6 +270,7 @@ public class Outline : MonoBehaviour {
   }
 
   void UpdateMaterialProperties() {
+
     // Apply properties according to mode
     outlineFillMaterial.SetColor("_OutlineColor", outlineColor);
 
